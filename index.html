@@ -3,165 +3,401 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Amir Shamaei - Biomedical Engineer</title>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
-    <style>
-        body {
-            font-family: 'Montserrat', sans-serif;
-            line-height: 1.6;
-            color: #333;
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-        }
-        h1, h2, h3 {
-            font-weight: 600;
-            margin-bottom: 10px;
-        }
-        a {
-            color: #007bff;
-            text-decoration: none;
-        }
-        a:hover {
-            text-decoration: underline;
-        }
-        section {
-            margin-bottom: 30px;
-        }
-        ul, ol {
-            margin-left: 20px;
-        }
-        nav ul {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-        }
-
-        nav li {
-            display: inline;
-            margin-right: 10px;
-        }
-
-        nav li a {
-            text-decoration: none;
-            color: #333;
-            padding: 5px;
-        }
-
-        nav li a:hover {
-            background-color: #ddd;
-        }
-    </style>
+    <title>Amir Shamaei - Biomedical Researcher & ML Engineer</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="projects.html">Projects</a></li>
-            </ul>
+    <div class="container">
+        <!-- Navigation -->
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <a href="#home">AS</a>
+                </div>
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="#home" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#experience" class="nav-link">Experience</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#education" class="nav-link">Education</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#skills" class="nav-link">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#publications" class="nav-link">Publications</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#projects" class="nav-link">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#awards" class="nav-link">Awards</a>
+                    </li>
+                </ul>
+                <div class="nav-toggle">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
         </nav>
-    </header>
-    <header>
-        <h1>Amir Shamaei</h1>
-        <p>+13682992121 | amirmohammad.shamaei@ucalgary.ca</p>
-        <p>CA</p>
-        <p><a href="https://amirshamaei.github.io">amirshamaei.github.io</a></p>
-    </header>
 
-    <section>
-        <h2>Professional Summary</h2>
-        <p>Biomedical engineer with a Ph.D. and expertise in developing artificial intelligence and software solutions for magnetic resonance spectroscopy and imaging. Seeking to leverage my strong research background, programming skills, and experience developing software to advance the field of biomedical imaging. Passionate about applying machine learning techniques to improve the analysis and interpretation of complex medical imaging data, ultimately enhancing patient care.</p>
-    </section>
+        <!-- Header Section -->
+        <header class="header" id="home">
+            <div class="header-content">
+                <div class="profile-section">
+                    <div class="profile-image">
+                        <div class="image-placeholder">
+                            <i class="fas fa-user"></i>
+                        </div>
+                    </div>
+                    <div class="profile-info">
+                        <h1 class="name">Amir Shamaei</h1>
+                        <p class="title">Biomedical Researcher & ML Engineer</p>
+                        <p class="summary">
+                            An accomplished biomedical researcher with over 8 years of experience in developing cutting-edge deep learning solutions for medical data analysis, reconstruction, and processing. With a Ph.D. in biomedical engineering and extensive research experience, I specialize in applying advanced machine learning, deep learning, and signal processing techniques to solve complex problems in medical imaging.
+                        </p>
+                    </div>
+                </div>
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>shamaie.amir@gmail.com</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Canada</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fab fa-github"></i>
+                        <a href="https://github.com/amirshamaei" target="_blank">amirshamaei.github.io</a>
+                    </div>
+                </div>
+            </div>
+        </header>
 
-    <section>
-        <h2>Education</h2>
-        <h3>Ph.D. in Biomedical Engineering, Brno University of Technology (2019 - 2023)</h3>
-        <ul>
-            <li>Dissertation: Development of new artificial intelligence functionalities for magnetic resonance spectroscopic signals processing</li>
-            <li>Supervisor: Dr. Radovan Jiˇr´ık</li>
-            <li>Co-Supervisors: Dr. Zenon Starˇcuk, Dr. Jana Starˇcukov´a</li>
-        </ul>
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Experience Section -->
+            <section class="section" id="experience">
+                <h2 class="section-title">
+                    <i class="fas fa-briefcase"></i>
+                    Professional Experience
+                </h2>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <h3>Senior DSP/ML Engineer</h3>
+                            <p class="company">Synex Medical, Toronto, Canada</p>
+                            <p class="period">2024 - Present</p>
+                            <ul>
+                                <li>Developed advanced signal processing techniques for solving inverse problems in magnetic resonance data, including denoising, filtering, MRI signal reconstruction, and preprocessing</li>
+                                <li>Designed and implemented an end-to-end machine learning pipeline with CI/CD integration for model training, tracking, and selection</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <h3>Instructor</h3>
+                            <p class="company">University of Calgary and SAIT, Canada</p>
+                            <p class="period">2023 - 2024</p>
+                            <ul>
+                                <li>Advanced Topics in Image Analysis and Machine Learning (co-instructor)</li>
+                                <li>Operating Systems</li>
+                                <li>Software Security</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <h3>Postdoctoral Fellow</h3>
+                            <p class="company">Advanced Imaging and AI Lab, University of Calgary</p>
+                            <p class="period">2023 - 2024</p>
+                            <ul>
+                                <li>Developed innovative deep learning-based MRI reconstruction framework integrating deep registration model and transformer-based enhancement network</li>
+                                <li>Incorporated prior subject-specific information using deep learning techniques, enabling 4 times faster MRI acquisitions</li>
+                                <li>Developing MRIntelligence, a software application for integrating advanced MRI reconstruction and analysis techniques into clinical workflows</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <h3>Marie Skłodowska-Curie Fellow</h3>
+                            <p class="company">Czech Academy of Sciences, Czech Republic</p>
+                            <p class="period">2019 - 2023</p>
+                            <ul>
+                                <li>Led research and development of innovative techniques for magnetic resonance spectroscopic imaging analysis</li>
+                                <li>Designed open-source solutions for magnetic resonance signal processing using Python and Java</li>
+                                <li>Participated in jMRUI software package development, utilized by 4,550+ researchers worldwide</li>
+                                <li>Published 10 papers in top conferences and journals</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
-        <h3>M.Sc. in Biomedical Engineering, Amirkabir University of Technology (2015 - 2018)</h3>
-        <ul>
-            <li>Dissertation: Design and fabrication of a Lab-on-chip device for assessment of cancer cells viability during electrical stimulation</li>
-            <li>Supervisor: Dr. Saviz</li>
-            <li>Co-Supervisors: Dr. Solouk, Dr. Abdullahad</li>
-        </ul>
+            <!-- Education Section -->
+            <section class="section" id="education">
+                <h2 class="section-title">
+                    <i class="fas fa-graduation-cap"></i>
+                    Education
+                </h2>
+                <div class="education-grid">
+                    <div class="education-item">
+                        <div class="education-header">
+                            <h3>Ph.D. in Biomedical Engineering</h3>
+                            <span class="year">2019 - 2023</span>
+                        </div>
+                        <p class="institution">Brno University of Technology</p>
+                        <p class="dissertation">Dissertation: Development of new artificial intelligence functionalities for magnetic resonance spectroscopic signals processing</p>
+                    </div>
+                    <div class="education-item">
+                        <div class="education-header">
+                            <h3>M.Sc. in Biomedical Engineering</h3>
+                            <span class="year">2015 - 2018</span>
+                        </div>
+                        <p class="institution">Amirkabir University of Technology</p>
+                        <p class="dissertation">Dissertation: Design and fabrication of a Lab-on-chip device for assessment of cancer cells viability during electrical stimulation</p>
+                    </div>
+                    <div class="education-item">
+                        <div class="education-header">
+                            <h3>B.Sc. in Electrical Engineering</h3>
+                            <span class="year">2010 - 2015</span>
+                        </div>
+                        <p class="institution">Zanjan University</p>
+                        <p class="dissertation">Dissertation: Wireless System Network Simulator Software</p>
+                    </div>
+                </div>
+            </section>
 
-        <h3>B.Sc. in Electrical Engineering, Zanjan University (2010 - 2015)</h3>
-        <ul>
-            <li>Dissertation: Wireless System Network Simulator Software</li>
-            <li>Supervisor: Dr. Babazadeh</li>
-        </ul>
-    </section>
+            <!-- Skills Section -->
+            <section class="section" id="skills">
+                <h2 class="section-title">
+                    <i class="fas fa-code"></i>
+                    Technical Skills
+                </h2>
+                <div class="skills-grid">
+                    <div class="skill-category">
+                        <h3>Programming Languages</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Java</span>
+                            <span class="skill-tag">Python</span>
+                            <span class="skill-tag">C++</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Frameworks & Libraries</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">PyTorch</span>
+                            <span class="skill-tag">JAX</span>
+                            <span class="skill-tag">FSL</span>
+                            <span class="skill-tag">ITK</span>
+                            <span class="skill-tag">MONAI</span>
+                            <span class="skill-tag">TorchIO</span>
+                            <span class="skill-tag">scikit-image</span>
+                            <span class="skill-tag">SimpleITK</span>
+                            <span class="skill-tag">pydicom</span>
+                            <span class="skill-tag">NiBabel</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Software & Tools</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">MatLab</span>
+                            <span class="skill-tag">jMRUI</span>
+                            <span class="skill-tag">3D Slicer</span>
+                            <span class="skill-tag">LC-MODEL</span>
+                            <span class="skill-tag">FiTAID</span>
+                            <span class="skill-tag">Image-J</span>
+                            <span class="skill-tag">FreeSurfer</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
-    <section>
-        <h2>Experience</h2>
-        <h3>Teaching Experience, University of Calgary and the Southern Alberta Institute of Technology (SAIT), Canada (2023-Present)</h3>
-        <ul>
-            <li>Advance Image processing and machine learning (co-instructor)</li>
-            <li>Operating systems</li>
-            <li>Software security</li>
-        </ul>
+            <!-- Publications Section -->
+            <section class="section" id="publications">
+                <h2 class="section-title">
+                    <i class="fas fa-book"></i>
+                    Selected Publications
+                </h2>
+                <div class="publications-list">
+                    <div class="publication-item">
+                        <div class="publication-header">
+                            <h3>Physics-informed Deep Learning Approach to Quantification of Human Brain Metabolites</h3>
+                            <span class="impact-factor">IF: 7.7</span>
+                        </div>
+                        <p class="journal">Computers in Biology and Medicine, 2023</p>
+                        <p class="authors"><strong>Shamaei, A</strong>, Starcukova, J, Starcuk, Z</p>
+                    </div>
+                    <div class="publication-item">
+                        <div class="publication-header">
+                            <h3>Model-informed unsupervised deep learning approaches to frequency and phase correction of MRS signals</h3>
+                            <span class="impact-factor">IF: 3.3</span>
+                        </div>
+                        <p class="journal">Magnetic Resonance in Medicine, 2023</p>
+                        <p class="authors"><strong>Shamaei, A</strong>, Starcukova, J, Pavlova, I, Starcuk, Z</p>
+                    </div>
+                    <div class="publication-item">
+                        <div class="publication-header">
+                            <h3>Water removal in MR spectroscopic imaging with Casorati singular value decomposition</h3>
+                            <span class="impact-factor">IF: 3.3</span>
+                        </div>
+                        <p class="journal">Magnetic Resonance in Medicine, 2024</p>
+                        <p class="authors"><strong>Shamaei, A</strong>, Starcukova J, Rizzo R, Starcuk Z</p>
+                    </div>
+                </div>
+            </section>
 
-        <h3>Postdoctoral Fellow, Advanced Imaging and Artificial Intelligence Lab, University of Calgary, Canada (2023-Present)</h3>
-        <ul>
-            <li>Developing AutoDL reconstruction methods</li>
-            <li>Incorporation of redundancies in the data, such as past subject-specific information via deep learning</li>
-            <li>Developing a software application called MRIntelligence to integrate MRI</li>
-        </ul>
+            <!-- Open Source Projects -->
+            <section class="section" id="projects">
+                <h2 class="section-title">
+                    <i class="fab fa-github"></i>
+                    Open Source Projects
+                </h2>
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <h3>Deep-MRS-Quantification</h3>
+                        <p>Model-Constrained Deep Learning Approach to the Quantification of MR Spectroscopy Data</p>
+                        <a href="https://github.com/amirshamaei/Deep-MRS-Quantification" target="_blank" class="project-link">
+                            <i class="fab fa-github"></i> View Project
+                        </a>
+                    </div>
+                    <div class="project-card">
+                        <h3>DeepFPC</h3>
+                        <p>Model-Informed unsupervised DL Approach to Frequency and Phase Correction of MRS Signals</p>
+                        <a href="https://github.com/amirshamaei/DeepFPC" target="_blank" class="project-link">
+                            <i class="fab fa-github"></i> View Project
+                        </a>
+                    </div>
+                    <div class="project-card">
+                        <h3>BrukerEyes</h3>
+                        <p>Cross-platform open-source package for Bruker Datasets management</p>
+                        <a href="https://github.com/amirshamaei/BrukerEyes" target="_blank" class="project-link">
+                            <i class="fab fa-github"></i> View Project
+                        </a>
+                    </div>
+                    <div class="project-card">
+                        <h3>NIfTI-MRS</h3>
+                        <p>JAVA package providing Reading/Writing interface for NIfTi MRS format</p>
+                        <a href="https://github.com/amirshamaei/NIfTI-MRS" target="_blank" class="project-link">
+                            <i class="fab fa-github"></i> View Project
+                        </a>
+                    </div>
+                </div>
+            </section>
 
-        <h3>Marie Curie Fellow, INSPiRE-MED consortium (2019 - 2023)</h3>
-        <ul>
-            <li>Lead research applying deep learning for medical image analysis and reconstruction</li>
-            <li>Published 6 papers in top conferences and journals</li>
-            <li>Designed open-source solutions for medical image processing using Python and Java</li>
-            <li>Ensured compliance with regulatory standards and quality assurance protocols, contributing to the CE/FDA approval of the developed software</li>
-        </ul>
+            <!-- Awards Section -->
+            <section class="section" id="awards">
+                <h2 class="section-title">
+                    <i class="fas fa-trophy"></i>
+                    Awards & Achievements
+                </h2>
+                <div class="awards-list">
+                    <div class="award-item">
+                        <div class="award-icon">🥇</div>
+                        <div class="award-content">
+                            <h3>First Place, ISMRM MRS Challenge</h3>
+                            <p>AI-based Brain Metabolite Fitting, Boston MA - Fall 2024</p>
+                        </div>
+                    </div>
+                    <div class="award-item">
+                        <div class="award-icon">💰</div>
+                        <div class="award-content">
+                            <h3>Lab2Market Validate Program</h3>
+                            <p>Offered $15,000 grant (declined) - Fall 2024</p>
+                        </div>
+                    </div>
+                    <div class="award-item">
+                        <div class="award-icon">☁️</div>
+                        <div class="award-content">
+                            <h3>AWS Cloud Credit Award</h3>
+                            <p>$10,000 AWS cloud credit for research on decreasing MRI acquisition time using deep learning - Fall 2023</p>
+                        </div>
+                    </div>
+                    <div class="award-item">
+                        <div class="award-icon">🏆</div>
+                        <div class="award-content">
+                            <h3>ISMRM 2023 MR Spectroscopy Study Group Award</h3>
+                            <p>Annual business meeting recognition - Spring 2023</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
 
-        <!-- Add the rest of the experience section -->
-    </section>
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-content">
+                <p>&copy; 2024 Amir Shamaei. All rights reserved.</p>
+                <div class="social-links">
+                    <a href="https://github.com/amirshamaei" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="mailto:shamaie.amir@gmail.com"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+        </footer>
+    </div>
 
-    <section>
-        <h2>Achievements and Awards</h2>
-        <ul>
-            <li>Awarded $10,000 AWS cloud credit for research on decreasing MRI acquisition time using deep learning in 2023 Fall 2023</li>
-            <li>Awarded at the annual ISMRM 2024 MR Spectroscopy Study Group Business Meeting Spring 2023</li>
-            <li>Ranked 1st in the student competition conference at the Brno University of Technology Spring 2020</li>
-            <!-- Add the rest of the awards -->
-        </ul>
-    </section>
+    <script>
+        // Mobile navigation toggle
+        const navToggle = document.querySelector('.nav-toggle');
+        const navMenu = document.querySelector('.nav-menu');
 
-    <section>
-        <h2>Peer-Reviewed Publications</h2>
-        <ol>
-            <li>Shamaei, A., Saviz, M., Solouk, A. et al. (2020). An In Vitro Electric Field Exposure Device with Real-Time Cell Impedance Sensing. Iran J Sci Technol Trans Sci 44, 575–585. <a href="https://doi.org/10.1007/s40995-020-00861-z">doi.org/10.1007/s40995-020-00861-z</a>, Impact factor: 2.4</li>
-            <li>Shamaei, A., Starcukova, J., Pavlova, I., Starcuk, Z. (2023). Model-informed unsupervised deep learning approaches to frequency and phase correction of MRS signals. Magn Reson Med. 89: 1221– 1236. <a href="https://doi.org/10.1002/mrm.29498">doi:10.1002/mrm.29498</a>, Impact factor: 3.3</li>
-            <li>Clarke, W., Mikkelsen, M., Oeltzschner, G., Bell T.K., Shamaei, A., Soher, B.J., Emir, U., Wilson, W. (2022). A standard data format for magnetic resonance spectroscopy. Magnetic Resonance in Medicine 1- 13. <a href="https://doi.org/10.1002/mrm.29418">doi:10.1002/mrm.29418</a>, Impact factor: 3.3</li>
-            <li>Rizzo, R., Dziadosz, M., Kyathanahally, S.P., Shamaei, A., Kreis, R. (2022). Quantification of MR spectra by deep learning in an idealized setting: Investigation of forms of input, network architectures, optimization by ensembles of networks, and training bias. Magn Reson Med. 1- 21. <a href="https://doi.org/10.1002/mrm.29561">doi:10.1002/mrm.29561</a>, Impact factor: 3.3</li>
-            <li>Shamaei, A., Starcukova, J., Starcuk, Z. (2023). Physics-informed Deep Learning Approach to Quantification of Human Brain Metabolites from Magnetic Resonance Spectroscopy Data. Computers in Biology and Medicine. 158: 106837. <a href="https://doi.org/10.1016/j.compbiomed.2023.106837">doi:10.1016/j.compbiomed.2023.106837</a>, Impact factor: 7.7</li>
-            <li>Shamaei, A., Starcukova J., Rizzo R., Starcuk Z. (2024). Water removal in MR spectroscopic imaging with Casorati singular value decomposition. Magn Reson Med. 91(4): 1694-1706. <a href="https://doi.org/10.1002/mrm.29959">doi: 10.1002/mrm.29959</a>, Impact factor: 3.3</li>
-        </ol>
-    </section>
-    
-    <section>
-        <h2>Conference Presentations</h2>
-        <ul>
-            <li>Shamaei, A., Starˇcukov´a J., Starcuk Jr. Z. (2023). EigenMRS: A Computationally Cheap Data-Driven Approach to MR Spectroscopic Imaging Denoising. Poster presentation delivered in person at ISMRM 2023, June, 2023.</li>
-            <li>Shamaei, A., Starˇcukov´a J., Jedrek Burakiewicz, Starcuk Jr. Z. (2023). Water Removal In MR Spectroscopic Imaging with Casorati Singular Value Decomposition. Poster presentation delivered in person at ISMRM 2023, June, 2023.</li>
-            <li>Shamaei, A., Rizzo, R. (2023). Physics-Informed Deep Learning Approach to Quantifying Magnetic Resonance Spectroscopy Data with Simultaneous Uncertainty Estimation. Power pitch presentation delivered in person at ISMRM 2023, June, 2023.</li>
-            <li>Shamaei, A., Starˇcukov´a J., Radim Koˇr´ınek, Starcuk Jr. Z. (2022). Magnetic Resonance Spectroscopic Imaging Data Denoising by Manifold Learning: An Unsupervised Deep Learning Approach. Poster presentation delivered in person at ISMRMB 2022, May, 2022.</li>
-            <li>Shamaei, A., Starˇcukov´a J., Starcuk Jr. Z. (2021). Frequency and Phase Shift Correction of MR Spectra Using Deep Learning in Time Domain. Poster presentation delivered virtually at ESMRMB 2021, October, 2021.</li>
-            <li>Clarke, W., Bell, T., Emir, U., Mikkelsen, M., Oeltzschner, G., Rowland, B., Shamaei, A., Soher, B., Tapper, S., Wilson, M. (2021). NIfTI MRS: A standard format for spectroscopic data. Poster presentation delivered in person at ISMRMB 2021, May, 2021.</li>
-            <li>Shamaei, A., Starˇcukov´a J., Starcuk Jr. Z. (2021). A Wavelet Scattering Convolution Network for Magnetic Resonance Spectroscopy Signal Quantitation. Oral Presentation delivered virtually at the 14th International Joint Conference on Biomedical Engineering Systems and Technologies, Vienna, February, 2021. <a href="https://doi.org/10.5220/0010318502680275">10.5220/0010318502680275</a>.</li>
-            <li>Shamaei, A., Jiˇr´ık R., Starˇcukov´a J. (2020). Deep Learning For Magnetic Resonance Spectroscopy Quantification: A Time-Frequency Analysis Approach. Presented in The 26th Conference Student EEICT, Brno University of Technology, March, 2020. <a href="https://www.webofscience.com/wos/woscc/full-record/WOS:000598376500032">WOS:000598376500032</a>.</li>
-            <li>Shamaei, A., Saviz, M. (2017). Voltage Transfer Functions for In-Vitro Cell Stimulation: A Computational Study. Poster presentation delivered at IEEE Conference on Biomedical Engineering, Amirkabir University of Technology, October, 2017. <a href="https://doi.org/10.1109/ICBME.2017.8430245">10.1109/ICBME.2017.8430245</a>.</li>
-        </ul>
-    </section>
+        navToggle.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+            navToggle.classList.toggle('active');
+        });
 
-    <!-- Add the remaining sections: Conference Presentations, Certifications, Open-Source Projects, Skills, Languages -->
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('.nav-link').forEach(link => {
+            link.addEventListener('click', e => {
+                e.preventDefault();
+                const targetId = link.getAttribute('href');
+                const targetSection = document.querySelector(targetId);
+                
+                if (targetSection) {
+                    targetSection.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
 
+                // Close mobile menu if open
+                navMenu.classList.remove('active');
+                navToggle.classList.remove('active');
+            });
+        });
+
+        // Active navigation highlighting
+        window.addEventListener('scroll', () => {
+            const sections = document.querySelectorAll('section[id]');
+            const navLinks = document.querySelectorAll('.nav-link');
+            
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                if (scrollY >= (sectionTop - 200)) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === `#${current}`) {
+                    link.classList.add('active');
+                }
+            });
+        });
+    </script>
 </body>
-</html>
+</html> 
