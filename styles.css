@@ -250,7 +250,7 @@ h3 {
 .work-dot { background: var(--work); }
 .education-dot { background: var(--education); }
 .timeline-scroll { overflow-x: auto; }
-.timeline { position: relative; min-width: 660px; }
+.timeline { position: relative; min-width: 760px; }
 
 .branch-lines {
     position: absolute;
@@ -270,7 +270,6 @@ h3 {
 
 .work-line { stroke: var(--work); }
 .education-line { stroke: var(--education); }
-.branch-lines .work-arrow { fill: var(--work); stroke: none; }
 
 .events {
     position: relative;
@@ -284,7 +283,7 @@ h3 {
     display: grid;
     grid-template-columns: 112px 120px minmax(0, 1fr);
     align-items: center;
-    min-height: 50px;
+    min-height: 60px;
 }
 
 .events time {
@@ -308,9 +307,9 @@ h3 {
 }
 
 .work-node { --node-x: 60px; color: var(--work); background: var(--work); }
-.branch-node { --node-x: 20px; color: var(--work); background: var(--work); }
 .role-node { --node-x: 100px; color: var(--work); background: var(--work); }
 .degree-node { --node-x: 20px; color: var(--education); background: var(--education); }
+.merge-node { box-shadow: 0 0 0 2px var(--paper), 0 0 0 4px currentColor; }
 
 .events li > div {
     display: flex;
@@ -321,6 +320,21 @@ h3 {
     padding: 13px 0;
     border-bottom: 1px solid var(--line);
 }
+
+.events li > .parallel-events {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    align-items: center;
+    gap: 18px;
+}
+
+.parallel-events article { min-width: 0; }
+.parallel-events article + article {
+    padding-left: 18px;
+    border-left: 1px solid var(--line);
+}
+
+.parallel-events small { display: block; }
 
 .events strong { font-size: 14px; font-weight: 560; white-space: nowrap; }
 
