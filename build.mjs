@@ -9,6 +9,7 @@ const physicsInformedHtml = await readFile('physics-informed.html', 'utf8');
 const idealizedHtml = await readFile('idealized.html', 'utf8');
 const deepfpcHtml = await readFile('deepfpc.html', 'utf8');
 const newbornDomainAdaptationHtml = await readFile('newborn-domain-adaptation.html', 'utf8');
+const spectroVitHtml = await readFile('spectro-vit.html', 'utf8');
 const css = await readFile('styles.css', 'utf8');
 const socialCard = (await readFile('og.png')).toString('base64');
 const profilePhoto = (await readFile('profile.jpg')).toString('base64');
@@ -17,6 +18,7 @@ const physicsInformedImage = (await readFile('physics-informed-mrs.jpg')).toStri
 const idealizedImage = (await readFile('idealized-mrs.jpg')).toString('base64');
 const deepfpcImage = (await readFile('deepfpc-mrs.jpg')).toString('base64');
 const newbornDomainAdaptationImage = (await readFile('newborn-domain-adaptation.jpg')).toString('base64');
+const spectroVitImage = (await readFile('spectro-vit.jpg')).toString('base64');
 
 const worker = `
 const html = ${JSON.stringify(html)};
@@ -25,6 +27,7 @@ const physicsInformedHtml = ${JSON.stringify(physicsInformedHtml)};
 const idealizedHtml = ${JSON.stringify(idealizedHtml)};
 const deepfpcHtml = ${JSON.stringify(deepfpcHtml)};
 const newbornDomainAdaptationHtml = ${JSON.stringify(newbornDomainAdaptationHtml)};
+const spectroVitHtml = ${JSON.stringify(spectroVitHtml)};
 const css = ${JSON.stringify(css)};
 const socialCard = ${JSON.stringify(socialCard)};
 const profilePhoto = ${JSON.stringify(profilePhoto)};
@@ -33,6 +36,7 @@ const physicsInformedImage = ${JSON.stringify(physicsInformedImage)};
 const idealizedImage = ${JSON.stringify(idealizedImage)};
 const deepfpcImage = ${JSON.stringify(deepfpcImage)};
 const newbornDomainAdaptationImage = ${JSON.stringify(newbornDomainAdaptationImage)};
+const spectroVitImage = ${JSON.stringify(spectroVitImage)};
 
 const headers = {
   'Cache-Control': 'public, max-age=300',
@@ -67,6 +71,10 @@ export default {
 
     if (pathname === '/newborn-domain-adaptation.html') {
       return new Response(newbornDomainAdaptationHtml, { headers: { ...headers, 'Content-Type': 'text/html; charset=utf-8' } });
+    }
+
+    if (pathname === '/spectro-vit.html') {
+      return new Response(spectroVitHtml, { headers: { ...headers, 'Content-Type': 'text/html; charset=utf-8' } });
     }
 
     if (pathname === '/styles.css') {
@@ -105,6 +113,11 @@ export default {
 
     if (pathname === '/newborn-domain-adaptation.jpg') {
       const bytes = Uint8Array.from(atob(newbornDomainAdaptationImage), character => character.charCodeAt(0));
+      return new Response(bytes, { headers: { ...headers, 'Content-Type': 'image/jpeg', 'Cache-Control': 'public, max-age=86400' } });
+    }
+
+    if (pathname === '/spectro-vit.jpg') {
+      const bytes = Uint8Array.from(atob(spectroVitImage), character => character.charCodeAt(0));
       return new Response(bytes, { headers: { ...headers, 'Content-Type': 'image/jpeg', 'Cache-Control': 'public, max-age=86400' } });
     }
 
