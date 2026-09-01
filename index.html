@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Amir Shamaei — biomedical researcher and machine learning engineer working on magnetic resonance, inverse problems, and scientific software.">
-    <meta name="theme-color" content="#050505">
+    <meta name="theme-color" content="#f6f6f3">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://amirshamaei.github.io/">
     <meta property="og:title" content="Amir Shamaei">
@@ -15,153 +15,95 @@
     <meta name="twitter:description" content="Biomedical researcher and machine learning engineer.">
     <meta name="twitter:image" content="https://amirshamaei.github.io/og.png">
     <title>Amir Shamaei</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css?v=3">
 </head>
 <body>
-    <main class="sheet">
-        <header class="profile">
+    <header class="site-header">
+        <a class="wordmark" href="index.html" aria-label="Amir Shamaei, home">AS</a>
+        <nav aria-label="Primary navigation">
+            <a href="#work">Work</a>
+            <a href="#experience">Experience</a>
+            <a href="mailto:shamaie.amir@gmail.com">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero" aria-labelledby="page-title">
             <div class="portrait">
                 <img src="profile.jpg?v=2" alt="Amir Shamaei at Lake Louise" width="4032" height="3024">
             </div>
-
-            <div class="bio">
-                <h1>Amir Shamaei</h1>
-                <p>Biomedical researcher &amp; ML engineer working on magnetic resonance, inverse problems, and scientific software.</p>
-                <nav aria-label="Profile links">
-                    <a href="mailto:shamaie.amir@gmail.com">email</a>
-                    <a href="https://github.com/amirshamaei" target="_blank" rel="noreferrer">github</a>
-                    <a href="https://www.linkedin.com/in/amshamaei" target="_blank" rel="noreferrer">linkedin</a>
-                    <a href="https://scholar.google.com/citations?user=irO6ttAAAAAJ&amp;hl=en" target="_blank" rel="noreferrer">scholar</a>
-                </nav>
-            </div>
-        </header>
-
-        <section class="projects" aria-labelledby="project-heading">
-            <h2 id="project-heading">selected_projects</h2>
-            <div class="project-browser" aria-roledescription="carousel" aria-label="Selected open-source projects">
-                <button class="project-nav previous" type="button" aria-label="Previous project"><span>△</span><small>previous<br>project</small></button>
-
-                <article class="project-card" aria-live="polite">
-                    <div class="project-visual" aria-hidden="true">
-                        <span class="visual-label">mrs://spectrum</span>
-                        <div id="project-signal">▁▁▂▃▅█▆▂▁▁▃▇▄▂▁▁</div>
-                        <span class="visual-axis">0.0 ───────── 4.2 ppm</span>
-                    </div>
-                    <div class="project-copy">
-                        <div class="project-number" id="project-count">01 / 04</div>
-                        <h3 id="project-title">Deep-MRS-Quantification</h3>
-                        <p id="project-description">Model-constrained deep learning for magnetic resonance spectroscopy quantification.</p>
-                        <div class="project-links">
-                            <a id="project-repo" href="https://github.com/amirshamaei/Deep-MRS-Quantification" target="_blank" rel="noreferrer">repository ↗</a>
-                            <a href="https://scholar.google.com/citations?user=irO6ttAAAAAJ&amp;hl=en" target="_blank" rel="noreferrer">publication ↗</a>
-                        </div>
-                    </div>
-                </article>
-
-                <button class="project-nav next" type="button" aria-label="Next project"><span>△</span><small>next<br>project</small></button>
+            <div class="hero-copy">
+                <p class="eyebrow">Biomedical research · Machine learning</p>
+                <h1 id="page-title">Amir Shamaei</h1>
+                <p class="intro">I build methods and scientific software at the intersection of magnetic resonance, signal processing, and machine learning.</p>
+                <div class="profile-links" aria-label="Profile links">
+                    <a href="mailto:shamaie.amir@gmail.com">Email</a>
+                    <a href="https://github.com/amirshamaei" target="_blank" rel="noreferrer">GitHub</a>
+                    <a href="https://www.linkedin.com/in/amshamaei" target="_blank" rel="noreferrer">LinkedIn</a>
+                    <a href="https://scholar.google.com/citations?user=irO6ttAAAAAJ&amp;hl=en" target="_blank" rel="noreferrer">Scholar</a>
+                </div>
             </div>
         </section>
 
-        <section class="history" aria-labelledby="history-heading">
-            <div class="history-heading">
-                <h2 id="history-heading">career_graph</h2>
-                <div class="legend" aria-label="Graph legend"><span><i class="work-color"></i>work</span><span><i class="degree-color"></i>degree</span></div>
+        <section class="work-section" id="work" aria-labelledby="work-title">
+            <div class="section-heading">
+                <p class="eyebrow">Selected work</p>
+                <h2 id="work-title">Research made useful.</h2>
+                <p>Open standards, reproducible tools, and learning-based methods for biomedical signals.</p>
             </div>
 
-            <div class="history-scroll">
-                <div class="history-graph">
-                    <svg class="branch-lines" viewBox="0 0 116 308" preserveAspectRatio="none" aria-hidden="true">
-                        <path class="main-branch" d="M22 12 L22 296"></path>
-                        <path class="role-branch" d="M22 66 C22 85 58 84 58 108 C58 137 22 135 22 154"></path>
-                        <path class="degree-branch" d="M22 132 C48 132 88 140 88 154 L88 286 C88 302 56 302 22 302"></path>
-                    </svg>
+            <a class="project-tile" href="project.html" aria-label="Open NIfTI-MRS project details">
+                <div class="project-image">
+                    <img src="nifti-mrs.png" alt="Illustrated overview of the NIfTI-MRS data standard" width="1024" height="1536">
+                </div>
+                <div class="project-meta">
+                    <div>
+                        <p class="project-kicker">Open standard · 2022</p>
+                        <h3>NIfTI-MRS</h3>
+                        <p>A standard data format for magnetic resonance spectroscopy.</p>
+                    </div>
+                    <span class="project-arrow" aria-hidden="true">↗</span>
+                </div>
+            </a>
+        </section>
 
-                    <ol class="events">
-                        <li>
-                            <time>2024—now</time><span class="node main-node"></span>
-                            <div><span class="tag work-tag">work</span><strong>Senior DSP/ML Engineer</strong><small>Synex Medical · Toronto</small></div>
-                        </li>
-                        <li>
-                            <time>2023—2024</time><span class="node main-node"></span>
-                            <div><span class="tag work-tag">work</span><strong>Instructor</strong><small>University of Calgary &amp; SAIT</small></div>
-                        </li>
-                        <li>
-                            <time>2023—2024</time><span class="node role-node"></span>
-                            <div><span class="tag work-tag">work</span><strong>Postdoctoral Fellow</strong><small>Advanced Imaging &amp; AI Lab</small></div>
-                        </li>
-                        <li>
-                            <time>2019—2023</time><span class="node degree-node"></span>
-                            <div><span class="tag degree-tag">degree</span><strong>Ph.D. Biomedical Engineering</strong><small>Brno University of Technology</small></div>
-                        </li>
-                        <li>
-                            <time>2019—2023</time><span class="node main-node"></span>
-                            <div><span class="tag work-tag">work</span><strong>Marie Skłodowska-Curie Fellow</strong><small>Czech Academy of Sciences</small></div>
-                        </li>
-                        <li>
-                            <time>2015—2018</time><span class="node degree-node"></span>
-                            <div><span class="tag degree-tag">degree</span><strong>M.Sc. Biomedical Engineering</strong><small>Amirkabir University of Technology</small></div>
-                        </li>
-                        <li>
-                            <time>2010—2015</time><span class="node degree-node"></span>
-                            <div><span class="tag degree-tag">degree</span><strong>B.Sc. Electrical Engineering</strong><small>Zanjan University</small></div>
-                        </li>
-                    </ol>
+        <section class="experience-section" id="experience" aria-labelledby="experience-title">
+            <div class="section-heading compact-heading">
+                <p class="eyebrow">Experience &amp; education</p>
+                <h2 id="experience-title">A research path in branches.</h2>
+            </div>
+
+            <div class="timeline-wrap">
+                <div class="timeline-legend" aria-label="Timeline legend">
+                    <span><i class="work-dot"></i>Work</span>
+                    <span><i class="education-dot"></i>Education</span>
+                </div>
+                <div class="timeline-scroll">
+                    <div class="timeline">
+                        <svg class="branch-lines" viewBox="0 0 120 350" preserveAspectRatio="none" aria-hidden="true">
+                            <path class="work-line" d="M24 10 L24 340"></path>
+                            <path class="work-line" d="M24 76 C24 102 62 96 62 125 C62 150 24 150 24 175"></path>
+                            <path class="education-line" d="M24 150 C58 150 92 160 92 186 L92 328 C92 344 56 344 24 344"></path>
+                        </svg>
+
+                        <ol class="events">
+                            <li class="main-event"><time>2024—now</time><span class="node work-node"></span><div><strong>Senior DSP / ML Engineer</strong><small>Synex Medical · Toronto</small></div></li>
+                            <li class="main-event"><time>2023—2024</time><span class="node work-node"></span><div><strong>Instructor</strong><small>University of Calgary &amp; SAIT</small></div></li>
+                            <li class="branch-event"><time>2023—2024</time><span class="node role-node"></span><div><strong>Postdoctoral Fellow</strong><small>Advanced Imaging &amp; AI Lab</small></div></li>
+                            <li class="education-event"><time>2019—2023</time><span class="node degree-node"></span><div><strong>Ph.D. Biomedical Engineering</strong><small>Brno University of Technology</small></div></li>
+                            <li class="main-event"><time>2019—2023</time><span class="node work-node"></span><div><strong>Marie Skłodowska-Curie Fellow</strong><small>Czech Academy of Sciences</small></div></li>
+                            <li class="education-event"><time>2015—2018</time><span class="node degree-node"></span><div><strong>M.Sc. Biomedical Engineering</strong><small>Amirkabir University of Technology</small></div></li>
+                            <li class="education-event"><time>2010—2015</time><span class="node degree-node"></span><div><strong>B.Sc. Electrical Engineering</strong><small>Zanjan University</small></div></li>
+                        </ol>
+                    </div>
                 </div>
             </div>
         </section>
     </main>
 
-    <script>
-        const projects = [
-            {
-                title: 'Deep-MRS-Quantification',
-                description: 'Model-constrained deep learning for magnetic resonance spectroscopy quantification.',
-                repo: 'https://github.com/amirshamaei/Deep-MRS-Quantification',
-                signal: '▁▁▂▃▅█▆▂▁▁▃▇▄▂▁▁'
-            },
-            {
-                title: 'DeepFPC',
-                description: 'Unsupervised frequency and phase correction for magnetic resonance spectroscopy signals.',
-                repo: 'https://github.com/amirshamaei/DeepFPC',
-                signal: '▁▃▆█▅▂▁▁▂▄▇▃▁▂▁▁'
-            },
-            {
-                title: 'BrukerEyes',
-                description: 'A cross-platform package for managing and exploring Bruker datasets.',
-                repo: 'https://github.com/amirshamaei/BrukerEyes',
-                signal: '▂▂▂▅▇▄▂▁▂▆█▅▂▁▁▁'
-            },
-            {
-                title: 'NIfTI-MRS',
-                description: 'A Java interface for reading and writing NIfTI magnetic resonance spectroscopy data.',
-                repo: 'https://github.com/amirshamaei/NIfTI-MRS',
-                signal: '▁▂▄▆▃▁▂▅█▆▃▂▁▁▂▁'
-            }
-        ];
-
-        let projectIndex = 0;
-        const title = document.querySelector('#project-title');
-        const description = document.querySelector('#project-description');
-        const repo = document.querySelector('#project-repo');
-        const signal = document.querySelector('#project-signal');
-        const count = document.querySelector('#project-count');
-
-        function showProject(nextIndex) {
-            projectIndex = (nextIndex + projects.length) % projects.length;
-            const project = projects[projectIndex];
-            title.textContent = project.title;
-            description.textContent = project.description;
-            repo.href = project.repo;
-            signal.textContent = project.signal;
-            count.textContent = `${String(projectIndex + 1).padStart(2, '0')} / ${String(projects.length).padStart(2, '0')}`;
-        }
-
-        document.querySelector('.previous').addEventListener('click', () => showProject(projectIndex - 1));
-        document.querySelector('.next').addEventListener('click', () => showProject(projectIndex + 1));
-        document.addEventListener('keydown', event => {
-            if (event.key === 'ArrowLeft') showProject(projectIndex - 1);
-            if (event.key === 'ArrowRight') showProject(projectIndex + 1);
-        });
-    </script>
+    <footer>
+        <p>Based in Toronto, Canada.</p>
+        <p>© 2026 Amir Shamaei</p>
+    </footer>
 </body>
 </html>
