@@ -15,7 +15,7 @@
     <meta name="twitter:description" content="Biomedical researcher and machine learning engineer.">
     <meta name="twitter:image" content="https://amirshamaei.github.io/og.png">
     <title>Amir Shamaei</title>
-    <link rel="stylesheet" href="styles.css?v=10">
+    <link rel="stylesheet" href="styles.css?v=11">
 </head>
 <body>
     <header class="site-header">
@@ -59,18 +59,24 @@
                 <div class="timeline-scroll">
                     <div class="timeline">
                         <svg class="branch-lines" viewBox="0 0 120 400" preserveAspectRatio="none" aria-hidden="true">
-                            <path class="work-line" d="M24 10 L24 390"></path>
-                            <path class="work-line" d="M24 126 C24 152 62 146 62 175 C62 200 24 200 24 225"></path>
-                            <path class="education-line" d="M24 200 C58 200 92 210 92 236 L92 378 C92 394 56 394 24 394"></path>
+                            <defs>
+                                <marker id="work-arrow" markerWidth="5" markerHeight="5" refX="4" refY="2.5" orient="auto">
+                                    <path class="work-arrow" d="M0 0 L5 2.5 L0 5 Z"></path>
+                                </marker>
+                            </defs>
+                            <path class="work-line" d="M60 225 L60 10" marker-end="url(#work-arrow)"></path>
+                            <path class="work-line" d="M60 100 C40 100 20 106 20 125 C20 145 40 150 60 150"></path>
+                            <path class="work-line" d="M60 105 C85 105 100 122 100 175 C100 198 82 215 60 215"></path>
+                            <path class="education-line" d="M20 375 L20 275 C20 248 36 232 60 225"></path>
                         </svg>
 
                         <ol class="events">
                             <li class="main-event"><time>Jan 2026—now</time><span class="node work-node"></span><div><strong>Senior DSP / ML Engineer II</strong><small>Synex Medical · Toronto</small></div></li>
                             <li class="main-event"><time>2024—Dec 2025</time><span class="node work-node"></span><div><strong>Senior DSP / ML Engineer</strong><small>Synex Medical · Toronto</small></div></li>
-                            <li class="main-event"><time>2023—2024</time><span class="node work-node"></span><div><strong>Instructor</strong><small>University of Calgary &amp; SAIT</small></div></li>
-                            <li class="branch-event"><time>2023—2024</time><span class="node role-node"></span><div><strong>Postdoctoral Fellow</strong><small>Advanced Imaging &amp; AI Lab</small></div></li>
-                            <li class="education-event"><time>2019—2023</time><span class="node degree-node"></span><div><strong>Ph.D. Biomedical Engineering</strong><small>Brno University of Technology</small></div></li>
+                            <li class="branch-event"><time>2023—2024</time><span class="node branch-node"></span><div><strong>Postdoctoral Fellow</strong><small>Advanced Imaging &amp; AI Lab</small></div></li>
+                            <li class="branch-event"><time>2023—2024</time><span class="node role-node"></span><div><strong>Instructor</strong><small>University of Calgary &amp; SAIT</small></div></li>
                             <li class="main-event"><time>2019—2023</time><span class="node work-node"></span><div><strong>Marie Skłodowska-Curie Fellow</strong><small>Czech Academy of Sciences</small></div></li>
+                            <li class="education-event"><time>2019—2023</time><span class="node degree-node"></span><div><strong>Ph.D. Biomedical Engineering</strong><small>Brno University of Technology</small></div></li>
                             <li class="education-event"><time>2015—2018</time><span class="node degree-node"></span><div><strong>M.Sc. Biomedical Engineering</strong><small>Amirkabir University of Technology</small></div></li>
                             <li class="education-event"><time>2010—2015</time><span class="node degree-node"></span><div><strong>B.Sc. Electrical Engineering</strong><small>Zanjan University</small></div></li>
                         </ol>
