@@ -161,14 +161,27 @@ h2 {
     font-size: 16px;
 }
 
-.project-tile { display: block; color: inherit; text-decoration: none; }
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 28px;
+    align-items: start;
+}
+
+.project-tile {
+    display: block;
+    overflow: hidden;
+    border-radius: 16px;
+    color: inherit;
+    background: var(--surface);
+    box-shadow: 0 1px 2px rgb(20 20 20 / 5%), 0 12px 36px rgb(20 20 20 / 4%);
+    text-decoration: none;
+}
 
 .project-image {
     position: relative;
-    height: min(68vw, 720px);
-    min-height: 420px;
+    height: 350px;
     overflow: hidden;
-    border-radius: 18px;
     background: #ebebe7;
 }
 
@@ -187,7 +200,8 @@ h2 {
     display: flex;
     justify-content: space-between;
     gap: 32px;
-    padding: 28px 2px 0;
+    min-height: 178px;
+    padding: 24px;
 }
 
 .project-meta > div { max-width: 760px; }
@@ -195,7 +209,7 @@ h2 {
 
 h3 {
     margin-bottom: 8px;
-    font-size: clamp(26px, 3vw, 40px);
+    font-size: clamp(25px, 2.6vw, 34px);
     font-weight: 560;
     letter-spacing: -.04em;
 }
@@ -398,7 +412,9 @@ footer p { margin: 0; }
     .section-heading .eyebrow { margin: 0; }
     .work-section,
     .experience-section { padding: 88px 0; }
-    .project-image { height: 78vw; min-height: 360px; }
+    .project-grid { gap: 18px; }
+    .project-image { height: 300px; }
+    .project-meta { min-height: 190px; padding: 20px; }
     .timeline-legend { flex-direction: row; gap: 22px; }
     .detail-main { padding-top: 42px; }
     .back-link { margin-bottom: 16px; }
@@ -410,8 +426,9 @@ footer p { margin: 0; }
     .hero { padding-top: 54px; }
     h1 { font-size: clamp(48px, 16vw, 72px); }
     .intro { font-size: 19px; }
-    .project-image { min-height: 330px; border-radius: 12px; }
-    .project-meta { padding-top: 20px; }
+    .project-grid { grid-template-columns: 1fr; }
+    .project-image { height: 330px; }
+    .project-meta { min-height: 0; padding: 20px; }
     .project-arrow { font-size: 28px; }
     footer { flex-direction: column; gap: 6px; }
     .detail-actions a { width: 100%; justify-content: center; }
