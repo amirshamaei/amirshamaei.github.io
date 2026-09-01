@@ -15,7 +15,7 @@
     <meta name="twitter:description" content="Biomedical researcher and machine learning engineer.">
     <meta name="twitter:image" content="https://amirshamaei.github.io/og.png">
     <title>Amir Shamaei</title>
-    <link rel="stylesheet" href="styles.css?v=12">
+    <link rel="stylesheet" href="styles.css?v=13">
 </head>
 <body>
     <header class="site-header">
@@ -43,6 +43,7 @@
                     <a href="https://scholar.google.com/citations?user=irO6ttAAAAAJ&amp;hl=en" target="_blank" rel="noreferrer">Scholar</a>
                 </div>
             </div>
+
         </section>
 
         <section class="experience-section" id="experience" aria-labelledby="experience-title">
@@ -73,6 +74,22 @@
                             <li class="education-event"><time>2010—2015</time><span class="node degree-node"></span><div><strong>B.Sc. Electrical Engineering</strong><small>Zanjan University</small></div></li>
                         </ol>
                     </div>
+                </div>
+            </div>
+
+            <div class="career-terminal">
+                <p class="terminal-label">career.git <span>symbolic history</span></p>
+                <div class="terminal-shell">
+                    <div class="terminal-toolbar">
+                        <span class="terminal-controls" aria-hidden="true"><i></i><i></i><i></i></span>
+                        <span>career.git — zsh</span>
+                        <span>step <b data-terminal-step>01</b>/18</span>
+                    </div>
+                    <div class="terminal-body" aria-hidden="true">
+                        <span class="terminal-prompt">amir@career %</span>
+                        <span class="terminal-command" data-terminal-command>git init -b education career</span><span class="terminal-cursor"></span>
+                    </div>
+                    <p class="sr-only">A symbolic Git history: initialize the education branch; commit the bachelor’s and master’s degrees; branch into work; commit the Ph.D. and Marie Curie fellowship in parallel; merge into postdoctoral work; branch and merge the instructor role; then commit the two senior engineering roles.</p>
                 </div>
             </div>
         </section>
@@ -204,5 +221,73 @@
         <p>Based in Toronto, Canada.</p>
         <p>© 2026 Amir Shamaei</p>
     </footer>
+    <script>
+        (() => {
+            const command = document.querySelector('[data-terminal-command]');
+            const step = document.querySelector('[data-terminal-step]');
+            if (!command || !step) return;
+
+            const commands = [
+                'git init -b education career',
+                'git commit -m "B.Sc. Electrical Engineering"',
+                'git commit -m "M.Sc. Biomedical Engineering"',
+                'git branch work',
+                'git switch education',
+                'git commit -m "Ph.D. Biomedical Engineering"',
+                'git switch work',
+                'git commit -m "Marie Curie Fellow"',
+                'git branch postdoc',
+                'git switch postdoc',
+                'git merge education --no-ff -m "Postdoctoral Fellow"',
+                'git branch instructor',
+                'git switch instructor',
+                'git commit -m "Instructor"',
+                'git switch postdoc',
+                'git merge instructor --no-ff',
+                'git commit -m "Senior DSP / ML Engineer"',
+                'git commit -m "Senior DSP / ML Engineer II"'
+            ];
+
+            if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                command.textContent = 'git log --graph --oneline --all';
+                step.textContent = '18';
+                return;
+            }
+
+            let commandIndex = 0;
+            let characterIndex = commands[0].length;
+            let deleting = false;
+
+            const animate = () => {
+                const current = commands[commandIndex];
+                command.textContent = current.slice(0, characterIndex);
+                step.textContent = String(commandIndex + 1).padStart(2, '0');
+
+                if (!deleting && characterIndex < current.length) {
+                    characterIndex += 1;
+                    window.setTimeout(animate, 38 + Math.random() * 34);
+                    return;
+                }
+
+                if (!deleting) {
+                    deleting = true;
+                    window.setTimeout(animate, 1050);
+                    return;
+                }
+
+                if (characterIndex > 0) {
+                    characterIndex -= 1;
+                    window.setTimeout(animate, 18);
+                    return;
+                }
+
+                deleting = false;
+                commandIndex = (commandIndex + 1) % commands.length;
+                window.setTimeout(animate, 220);
+            };
+
+            window.setTimeout(animate, 1050);
+        })();
+    </script>
 </body>
 </html>
